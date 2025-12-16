@@ -1,6 +1,6 @@
 require('dotenv').config()
 const express = require('express')
-const authRoutes = require('./routes/auth.ruote') // ⬅️ 1. Import Fix
+const authRoutes = require('./routes/auth.route') // ⬅️ 1. Import Fix
 const cookeparser = require('cookie-parser')
 
 
