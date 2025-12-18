@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const authRoutes = require('./routes/auth.route') // ⬅️ 1. Import Fix
 const cookeparser = require('cookie-parser')
+const postRoue = require('./routes/user.route')
 
 
 
@@ -14,6 +15,7 @@ app.use(cookeparser())
 
 
 app.use('/api/auth', authRoutes);
+app.use('/',postRoue)
 
 
 module.exports=app
